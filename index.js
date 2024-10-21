@@ -1,5 +1,6 @@
-const express = require("express"); // Corrected the way express is imported
-const mongoose = require("mongoose");
+const express = require("express");
+const mongoose = require('mongoose');
+
 const cors = require("cors");
 const http = require('http');
 
