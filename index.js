@@ -26,9 +26,10 @@ app.post("/auth/user", (req, res) => {
     .then((user) => res.status(201).json(user)) // Return created user with status 201
     .catch((err) => res.status(500).json({ error: err.message })); // Return error message with status 500
 });
-app.get("/start", (res) => {
+app.get("/start", (req, res) => {
   res.status(200).json({ message: "Start endpoint hit!" });
 });
+
 
 // Create the HTTP server and listen on port 3000
 const server = http.createServer(app);
